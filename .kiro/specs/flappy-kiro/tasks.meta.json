@@ -1,0 +1,855 @@
+{
+  "pbtResults": {
+    "3.3 Write property test for gravity below terminal": {
+      "status": "passed",
+      "lastRunTimestamp": 1788942184346
+    },
+    "3.2 Write property test for flap velocity replacement": {
+      "status": "passed",
+      "lastRunTimestamp": 1788942203265
+    },
+    "3.5 Write property test for position integration": {
+      "status": "passed",
+      "lastRunTimestamp": 1788942247036
+    },
+    "4.2 Write property test for collision ending the game": {
+      "status": "passed",
+      "lastRunTimestamp": 1788942376042
+    },
+    "6.2 Write property test for scoring each pair at most once": {
+      "status": "passed",
+      "lastRunTimestamp": 1788942392217
+    },
+    "6.3 Write property test for score bounds and saturation": {
+      "status": "passed",
+      "lastRunTimestamp": 1788942393256
+    },
+    "11.2 Write property test for aspect-ratio-preserving sizing": {
+      "status": "passed",
+      "lastRunTimestamp": 1788942859732
+    },
+    "10.2 Write property test for total, safe high-score parsing": {
+      "status": "passed",
+      "lastRunTimestamp": 1788942869783
+    }
+  },
+  "executionHistory": {
+    "1.1 Create project structure and entry point": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940225207
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940240141
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940423327
+      }
+    ],
+    "1.2 Define core constants and shared type shapes": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940225382
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940427825
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940611942
+      }
+    ],
+    "2.1 Implement mulberry32 PRNG threaded through state": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940225536
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940617971
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940742154
+      }
+    ],
+    "3.1 Implement gravity, flap, integration, and top clamp": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940225651
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940619141
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940741318
+      }
+    ],
+    "4.1 Implement AABB overlap and hit tests": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940225784
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940620249
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940743233
+      }
+    ],
+    "5.1 Implement pipe advance, spawn decision, generation, and culling": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940225891
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940750272
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940928657
+      }
+    ],
+    "6.1 Implement pass detection and score clamping": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940225988
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940751035
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940929995
+      }
+    ],
+    "7.1 Implement guarded transitions and Ready-state factory": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940226093
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940752493
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940928225
+      }
+    ],
+    "8.1 Implement step(state, dt, inputEvents)": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940226226
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941160030
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941343981
+      }
+    ],
+    "9. Checkpoint - Ensure all core tests pass": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940226322
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941351888
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941536309
+      }
+    ],
+    "10.1 Implement high-score load/save with safe parsing": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940226410
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940753432
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940929339
+      }
+    ],
+    "11.1 Implement pure canvas sizing helper": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940226504
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940754500
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940928783
+      }
+    ],
+    "11.3 Implement Canvas 2D renderer": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940226593
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941160769
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941344707
+      }
+    ],
+    "12.1 Implement one-shot audio playback": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940226686
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940948187
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941129823
+      }
+    ],
+    "13.1 Implement asset loading with timeout and per-asset failure reporting": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940226787
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940949564
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941128547
+      }
+    ],
+    "14.1 Implement keyboard and pointer input queue": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940226876
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940950233
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941130789
+      }
+    ],
+    "15. Checkpoint - Ensure all adapter tests pass": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940226970
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941538527
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941543855
+      }
+    ],
+    "16.1 Implement the fixed-timestep game loop": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940227096
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941352438
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941537752
+      }
+    ],
+    "16.2 Implement bootstrap in main.js": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940227186
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941544622
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941834502
+      }
+    ],
+    "18. Final checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940227274
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941840154
+      },
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941849100
+      }
+    ],
+    "1. Set up project scaffold and test tooling": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940612111
+      }
+    ],
+    "3. Implement physics module": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940741447
+      }
+    ],
+    "2. Implement seedable RNG": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940742241
+      }
+    ],
+    "4. Implement collision module": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940743330
+      }
+    ],
+    "7. Implement state machine module and initial state factory": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940928522
+      }
+    ],
+    "5. Implement pipe system module": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940928896
+      }
+    ],
+    "10. Implement storage adapter": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940929521
+      }
+    ],
+    "6. Implement scoring module": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788940930307
+      }
+    ],
+    "13. Implement asset loader adapter": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941128719
+      }
+    ],
+    "12. Implement audio player adapter": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941129952
+      }
+    ],
+    "14. Implement input adapter": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941130940
+      }
+    ],
+    "8. Implement the pure step function (integrates core modules)": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941344164
+      }
+    ],
+    "11. Implement canvas sizing helper and renderer": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941344852
+      }
+    ],
+    "16. Implement game loop and wire everything together": [
+      {
+        "executionId": "d86b053a-41e2-4b59-ae20-32ec7e272ddd",
+        "chatSessionId": "sess_8a02290e-83c2-476b-bce9-f4498783ba24",
+        "timestamp": 1788941834666
+      }
+    ],
+    "2.2 Write property test for RNG determinism and range": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942094206
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942279868
+      }
+    ],
+    "3.2 Write property test for flap velocity replacement": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942098731
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942280689
+      }
+    ],
+    "3.3 Write property test for gravity below terminal": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942099680
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942282145
+      }
+    ],
+    "3.4 Write property test for terminal velocity cap": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942101072
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942283093
+      }
+    ],
+    "3.5 Write property test for position integration": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942101917
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942283918
+      }
+    ],
+    "4.2 Write property test for collision ending the game": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942291903
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942418978
+      }
+    ],
+    "6.2 Write property test for scoring each pair at most once": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942292871
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942420328
+      }
+    ],
+    "7.2 Write property test for Ready-state ghost placement": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942294317
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942422601
+      }
+    ],
+    "7.3 Write property test for high score running maximum": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942295277
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942423433
+      }
+    ],
+    "6.3 Write property test for score bounds and saturation": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942296243
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942421201
+      }
+    ],
+    "5.2 Write property test for uniform leftward scrolling": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942430218
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942605257
+      }
+    ],
+    "5.3 Write property test for constant spawn spacing": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942431249
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942606081
+      }
+    ],
+    "5.4 Write property test for gap center bounds": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942432183
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942607564
+      }
+    ],
+    "5.5 Write property test for passable gap": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942433592
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942608417
+      }
+    ],
+    "5.6 Write property test for offscreen culling": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942434460
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942609278
+      }
+    ],
+    "8.2 Write property test for Ready inertness": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942615072
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942773276
+      }
+    ],
+    "8.3 Write property test for top-boundary clamp after step": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942616022
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942774269
+      }
+    ],
+    "8.4 Write property test for collision transition via step": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942617456
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942775625
+      }
+    ],
+    "8.5 Write property test for Game_Over freezing the pipe field": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942618440
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942776574
+      }
+    ],
+    "8.6 Write property test for idempotent Game_Over transition": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942619782
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942777992
+      }
+    ],
+    "8.7 Write property test for flap during restart lockout": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942620728
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942778971
+      }
+    ],
+    "8.8 Write property test for flap after lockout restarts": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942621898
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942779960
+      }
+    ],
+    "10.3 Write integration tests for storage load/save/failure": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942786859
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942933849
+      }
+    ],
+    "10.2 Write property test for total, safe high-score parsing": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942788281
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942932878
+      }
+    ],
+    "11.2 Write property test for aspect-ratio-preserving sizing": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942789220
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942935253
+      }
+    ],
+    "11.4 Write integration tests for renderer output": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942790631
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942936174
+      }
+    ],
+    "12.2 Write integration tests for audio behavior": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942791421
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942937072
+      }
+    ],
+    "13.2 Write integration tests for asset loading paths": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942942976
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788944689795
+      }
+    ],
+    "14.2 Write unit tests for input normalization": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942944370
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788944688610
+      }
+    ],
+    "16.3 Write integration tests for loop transitions and wiring": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942945318
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788944691060
+      }
+    ],
+    "17.1 Write a Playing-loop frame-rate smoke test": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788942946361
+      },
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788944691947
+      }
+    ],
+    "17. Add performance smoke test": [
+      {
+        "executionId": "71356d48-aaae-42fb-96bf-60e28d9befd6",
+        "chatSessionId": "sess_c26f4797-c30b-47e9-917d-38e84abfc04c",
+        "timestamp": 1788944692076
+      }
+    ]
+  }
+}
